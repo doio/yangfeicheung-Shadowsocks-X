@@ -16,8 +16,9 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 
 ### Download
 
-From [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
-
+From   [ssx-mac-v12.zip](http://www.sednax.com/data/ssx-mac-v12.zip)
+Or     [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
+  
 ### How to use
 1. Download the zip file and unzip,put the ShadowsocksX.app under Applications folder.
 2. Choose one server,if there's none,add one or buy one.
