@@ -1,6 +1,6 @@
 # Shadowsocks-X
 
-Current version is 2.1
+Current version is 2.2
 
 It's based on the old Shadowsocks software developed by clowindy,written in objc.
 
@@ -14,9 +14,14 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 
 - Xcode 9.0.1+
 
-## Download
+### Download
 
-From [here](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
+From [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
+
+### How to use
+1. Download the zip file and unzip,put the ShadowsocksX.app under Applications folder.
+2. Choose one server,if there's none,add one or buy one.
+3. Choose Auto Mode and you can acess prohibited sites like google.com now, for Oversea students(not in mainland China),you can use Oversea Mode,and choose a server in china,then you can access chinese sites without restriction of ip.
 
 ## Modes Introduction
 There are total four modes in this app:
