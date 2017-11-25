@@ -34,7 +34,8 @@ There are total four modes in this app:
 
 ## Features
 
-- Supports Socks5
+- Supports Socks5.
+- Supports Ping Servers Service.
 - Supports Http Proxy(polipo),it's integrated into this app,you don't have to install anything,no command line needed.
 - Block AD function lets you block those annoying ads when surfing online.
 - Could update GFW List by download GFW List from GitHub.
@@ -51,7 +52,8 @@ There are total four modes in this app:
 - Two more Modes: Oversea Modes &  Blacklist Modes
 - Supports Kcptun
 - Embedded with a http proxy
-
+- Ping Servers Service
+- Bypass proxy settings for customized hosts & domains under Preferences Panel
 
 ## License
 
