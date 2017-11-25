@@ -16,19 +16,21 @@
  */
 
 @interface PingHelper : NSObject <SimplePingDelegate>
-{
-    int ;
-}
 
 @property (nonatomic, assign, readwrite) BOOL                   forceIPv4;
 @property (nonatomic, assign, readwrite) BOOL                   forceIPv6;
 @property (nonatomic, strong, readwrite, nullable) SimplePing * pinger;
 @property (nonatomic, strong, readwrite, nullable) NSTimer *    sendTimer;
 @property ( nonatomic,strong, readwrite, nullable) NSDate *     startTime;
-@property (nonatomic, assign, readwrite) int                    pingCount;
-@property (nonatomic, assign, readwrite) double                 pingTotalTime;//this is the total ping time,e.g., we ping 5 times and then get the average value
+//@property (nonatomic, assign, readwrite) int                    pingCount;
+//@property (nonatomic, assign, readwrite) double                 pingTotalTime;//total ping time,e.g., we ping 3 times and  get average value
+@property (nonatomic, assign, readwrite) int                    currentPingIndex;
+@property (nonatomic, assign, readwrite) int                    maxFailedPingAllowed;//if  failed more than this,we stop ping and move to next
 
-+(void)pingHostname:(NSString*)hostName;
+- (void)stopPing;
+- (void)pingNextServer;
++ (void)pingHostname:(NSString* _Nonnull)hostName;
++ (PingHelper* _Nonnull)sharedInstance;
 
 @end
 

@@ -8,6 +8,9 @@
 
 #import "SimplePing.h"
 #import "PingHelper.h"
+#import "DataHelper.h"
+#import "ServerInfo.h"
+#import "AFEConstant.h"
 
 //https://stackoverflow.com/questions/22469810/get-ping-latency-from-host
 
@@ -89,20 +92,26 @@ static NSString * shortErrorFromError(NSError * error) {
 
 @implementation PingHelper
 
-+(void)pingHostname:(NSString*)hostName
++ (PingHelper*)sharedInstance
 {
-    static PingHelper* pt = nil;
+    static PingHelper* ph = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        pt = [[PingHelper alloc] init];
+        ph = [[PingHelper alloc] init];
     });
-    
-    pt.forceIPv4 = true;
-    pt.forceIPv6 = false;
-    pt.pingCount = 0;
-    pt.pingTotalTime = 0;
-    [pt runWithHostName:hostName];
-    NSLog(@"ping tool started");
+    return ph;
+}
+
++(void)pingHostname:(NSString*)hostName
+{
+
+    PingHelper* ph = [PingHelper sharedInstance];
+    ph.forceIPv4 = true;
+    ph.forceIPv6 = false;
+    ph.maxFailedPingAllowed = 2;
+    //ph.pingCount = 0;
+    //ph.pingTotalTime = 0;
+    [ph runWithHostName:hostName];
 }
 
 - (void)dealloc {
@@ -148,6 +157,9 @@ static NSString * shortErrorFromError(NSError * error) {
 - (void)sendPing {
     assert(self.pinger != nil);
     [self.pinger sendPingWithData:nil];
+    _maxFailedPingAllowed--;
+    if(_maxFailedPingAllowed < 0)
+        [self pingNextServer];
 }
 
 - (void)simplePing:(SimplePing *)pinger didStartWithAddress:(NSData *)address {
@@ -164,7 +176,7 @@ static NSString * shortErrorFromError(NSError * error) {
     // And start a timer to send the subsequent pings.
     
     assert(self.sendTimer == nil);
-    self.sendTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(sendPing) userInfo:nil repeats:YES];
+    self.sendTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendPing) userInfo:nil repeats:YES];
 }
 
 - (void)simplePing:(SimplePing *)pinger didFailWithError:(NSError *)error {
@@ -173,12 +185,16 @@ static NSString * shortErrorFromError(NSError * error) {
     NSLog(@"failed: %@", shortErrorFromError(error));
 
     [self.sendTimer invalidate];
-    self.sendTimer = nil;
+    //self.sendTimer = nil;
 
     // No need to call -stop.  The pinger will stop itself in this case.
     // We do however want to nil out pinger so that the runloop stops.
 
-    self.pinger = nil;
+    //self.pinger = nil;
+    
+    _maxFailedPingAllowed--;
+    if(_maxFailedPingAllowed <= 0)
+        [self pingNextServer];
 }
 
 - (void)simplePing:(SimplePing *)pinger didFailToSendPacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber error:(NSError *)error {
@@ -186,13 +202,17 @@ static NSString * shortErrorFromError(NSError * error) {
     assert(pinger == self.pinger);
     #pragma unused(packet)
     NSLog(@"#%u send failed: %@", (unsigned int) sequenceNumber, shortErrorFromError(error));
+    
+    _maxFailedPingAllowed--;
+    if(_maxFailedPingAllowed <= 0)
+        [self pingNextServer];
 }
 
 - (void)simplePing:(SimplePing *)pinger didSendPacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber {
 #pragma unused(pinger)
     assert(pinger == self.pinger);
 #pragma unused(packet)
-    NSLog(@"#%u sent", (unsigned int) sequenceNumber);
+    //NSLog(@"#%u sent", (unsigned int) sequenceNumber);
     self.startTime = [NSDate date];
 }
 
@@ -200,28 +220,53 @@ static NSString * shortErrorFromError(NSError * error) {
     #pragma unused(pinger)
     assert(pinger == self.pinger);
     #pragma unused(packet)
-    NSLog(@"#%u received, size=%zu", (unsigned int) sequenceNumber, (size_t) packet.length);
+    //NSLog(@"#%u received, size=%zu", (unsigned int) sequenceNumber, (size_t) packet.length);
     
     //added by delphiyuan
     NSDate *end=[NSDate date];
     double latency = [end timeIntervalSinceDate:self.startTime]*1000.0;
-    self.pingTotalTime += latency;
-    self.pingCount++;
+    //self.pingTotalTime += latency;
+    //self.pingCount++;
     
-    if(self.pingCount == 3)
+    //if(self.pingCount == 1)//ping only once,later we might do more
+    //{
+        NSLog(@"%@ %dms",self.pinger.hostName, (int)latency);
+    //}
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:NOTI_PING_SERVER_RESULT object:nil userInfo:@{@"host":pinger.hostName,@"latency":[NSString stringWithFormat:@"%d",(int)latency]}];
+    });
+    
+    [self pingNextServer];
+}
+
+- (void)pingNextServer
+{
+    [self stopPing];
+    self.currentPingIndex--;
+    if(self.currentPingIndex > 0)
     {
-        self.pinger = nil;
-        NSLog(@"latency=%f",self.pingTotalTime/self.pingCount);
+        NSArray* serverList = [[DataHelper shareInstance] getServerList];
+        ServerInfo* s = [serverList objectAtIndex:serverList.count - self.currentPingIndex];
+        [PingHelper pingHostname:s.host];
     }
 }
 
-
 - (void)simplePing:(SimplePing *)pinger didReceiveUnexpectedPacket:(NSData *)packet {
     #pragma unused(pinger)
-    assert(pinger == self.pinger);
+    //assert(pinger == self.pinger);
     NSLog(@"unexpected packet, size=%zu", (size_t) packet.length);
+    _maxFailedPingAllowed--;
+    if(_maxFailedPingAllowed <= 0)
+        [self pingNextServer];
 }
 
+- (void)stopPing
+{
+    [self.sendTimer invalidate];
+    self.pinger = nil;
+    self.sendTimer = nil;
+}
 @end
 
 /*
