@@ -1,0 +1,21 @@
+
+/* Class = "NSWindow"; title = "Software Update"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "軟件更新";
+
+/* Class = "NSButtonCell"; title = "Skip This Version"; ObjectID = "Kcn-1O-mHe"; */
+"Kcn-1O-mHe.title" = "跳過此版本";
+
+/* Class = "NSButtonCell"; title = "Automatically download and install updates in future"; ObjectID = "UAI-SC-iLp"; */
+"UAI-SC-iLp.title" = "以後自動檢測安裝更新 ^_^";
+
+/* Class = "NSTextFieldCell"; title = "A new version of ShadowsocksX is available,download now?"; ObjectID = "UNd-0p-Zn8"; */
+"UNd-0p-Zn8.title" = "發現新版本的ShadowsocksX,是否更新新版本?";
+
+/* Class = "NSButtonCell"; title = "Install Update"; ObjectID = "avt-3Q-vFX"; */
+"avt-3Q-vFX.title" = "立即更新";
+
+/* Class = "NSTextFieldCell"; title = "Release Notes:"; ObjectID = "x8P-m2-u03"; */
+"x8P-m2-u03.title" = "發布說明:";
+
+/* Class = "NSButtonCell"; title = "Remind Me Later"; ObjectID = "yMp-RB-EoA"; */
+"yMp-RB-EoA.title" = "稍後提醒";

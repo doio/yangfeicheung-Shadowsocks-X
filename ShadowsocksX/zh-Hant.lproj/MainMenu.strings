@@ -1,0 +1,86 @@
+/* Class = "NSMenu"; title = "Servers"; ObjectID = "43F-da-Zns"; */
+"43F-da-Zns.title" = "服務器";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "6vT-cR-lHx"; */
+"6vT-cR-lHx.title" = "幫助";
+
+/* Class = "NSMenuItem"; title = "Blacklist Mode"; ObjectID = "DSB-j7-ZM2"; */
+"DSB-j7-ZM2.title" = "黑名單模式";
+
+/* Class = "NSMenuItem"; title = "Servers"; ObjectID = "Dff-Iu-vVg"; */
+"Dff-Iu-vVg.title" = "服務器";
+
+/* Class = "NSMenuItem"; title = "Copy HTTP Proxy Shell Command"; ObjectID = "JAk-xJ-vAg"; */
+"JAk-xJ-vAg.title" = "複製HTTP代理命令";
+
+/* Class = "NSMenuItem"; title = "Feedback"; ObjectID = "Kz4-IM-A7v"; */
+"Kz4-IM-A7v.title" = "用戶反饋";
+
+/* Class = "NSMenuItem"; title = "Auto Mode"; ObjectID = "Q0m-nH-QKf"; */
+"Q0m-nH-QKf.title" = "自動模式";
+
+/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "SYs-Yh-35N"; */
+"SYs-Yh-35N.title" = "偏好設置...";
+
+/* Class = "NSMenuItem"; title = "Check For Updates..."; ObjectID = "Ywi-Q3-Fbz"; */
+"Ywi-Q3-Fbz.title" = "檢查更新...";
+
+/* Class = "NSMenuItem"; title = "Status: On"; ObjectID = "bP2-lX-GwS"; */
+"bP2-lX-GwS.title" = "狀態: 打開";
+
+/* Class = "NSMenuItem"; title = "Block AD"; ObjectID = "cm6-7c-96b"; */
+"cm6-7c-96b.title" = "屏蔽垃圾廣告";
+
+/* Class = "NSMenuItem"; title = "Enable HTTP Proxy"; ObjectID = "wnm-Ve-T8Z"; */
+"wnm-Ve-T8Z.title" = "啟用HTTP代理";
+
+/* Class = "NSMenuItem"; title = "Oversea Mode"; ObjectID = "epn-jd-xYE"; */
+"epn-jd-xYE.title" = "留學生模式";
+
+/* Class = "NSMenuItem"; title = "About US"; ObjectID = "hag-gp-09g"; */
+"hag-gp-09g.title" = "關於我們";
+
+/* Class = "NSMenuItem"; title = "Contact US"; ObjectID = "ycc-wv-Mbl"; */
+"ycc-wv-Mbl.title" = "聯繫我們";
+
+/* Class = "NSMenuItem"; title = "Show Statistics"; ObjectID = "amB-Nv-aCN"; */
+"amB-Nv-aCN.title" = "總流量統計";
+
+/* Class = "NSMenuItem"; title = "Show Logs"; ObjectID = "vWJ-fM-qTQ"; */
+"vWJ-fM-qTQ.title" = "查看Log";
+
+/* Class = "NSMenuItem"; title = "Quit ShadowsocksX"; ObjectID = "kZR-lI-h5W"; */
+"kZR-lI-h5W.title" = "退出ShadowsocksX";
+
+/* Class = "NSMenuItem"; title = "Edit Servers..."; ObjectID = "kbY-sf-D7f"; */
+"kbY-sf-D7f.title" = "編輯服務器...";
+
+/* Class = "NSMenuItem"; title = "Scan Screen QR Code"; ObjectID = "tht-oH-VKh"; */
+"tht-oH-VKh.title" = "掃描屏幕二維碼";
+
+/* Class = "NSMenuItem"; title = "Active Server QR Code"; ObjectID = "4em-5y-mHn"; */
+"4em-5y-mHn.title" = "生成當前服務器二維碼";
+
+/* Class = "NSMenuItem"; title = "Import URL From Clipboard"; ObjectID = "3pI-Le-XsZ"; */
+"3pI-Le-XsZ.title" = "從粘貼板URL導入服務器";
+
+/* Class = "NSMenuItem"; title = "Buy Servers"; ObjectID = "p5D-sE-HAA"; */
+"p5D-sE-HAA.title" = "購買服務器";
+
+/* Class = "NSMenuItem"; title = "Ping Servers"; ObjectID = "lAD-OA-Gev"; */
+"lAD-OA-Gev.title" = "服務器測速";
+
+/* Class = "NSMenuItem"; title = "Global Mode"; ObjectID = "pGH-eL-tRF"; */
+"pGH-eL-tRF.title" = "全局模式";
+
+/* Class = "NSMenuItem"; title = "Enable ShadowsocksX"; ObjectID = "qWf-bb-3Bg"; */
+"qWf-bb-3Bg.title" = "打開ShadowsocksX";
+
+/* Class = "NSMenuItem"; title = "Update GFW List"; ObjectID = "sht-RU-uQT"; */
+"sht-RU-uQT.title" = "更新GFW列表";
+
+/* Class = "NSMenuItem"; title = "Custom Rules"; ObjectID = "zoN-2A-D9g"; */
+"zoN-2A-D9g.title" = "用戶自定義規則";
+
+/* Class = "NSMenuItem"; title = "Launch At Login"; ObjectID = "dzM-3j-dN5"; */
+"dzM-3j-dN5.title" = "開機啟動";

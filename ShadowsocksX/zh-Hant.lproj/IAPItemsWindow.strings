@@ -1,0 +1,30 @@
+
+/* Class = "NSButtonCell"; title = "Buy"; ObjectID = "4gU-ZS-T0r"; */
+"4gU-ZS-T0r.title" = "購買";
+
+/* Class = "NSTextFieldCell"; title = "1 Month Package for 0.99$"; ObjectID = "BXC-zj-Gjr"; */
+"BXC-zj-Gjr.title" = "單月套餐12元";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "購買服務器";
+
+/* Class = "NSTextFieldCell"; title = "0000-00-00 00:00:00"; ObjectID = "KFv-Cu-653"; */
+"KFv-Cu-653.title" = "0000-00-00 00:00:00";
+
+/* Class = "NSTextFieldCell"; title = "12 Month Package for 12$"; ObjectID = "N9V-Ao-DK1"; */
+"N9V-Ao-DK1.title" = "包年套餐128元";
+
+/* Class = "NSButtonCell"; title = "Buy"; ObjectID = "Nnb-wI-ad3"; */
+"Nnb-wI-ad3.title" = "購買";
+
+/* Class = "NSTextFieldCell"; title = "Current Package Valid Until:"; ObjectID = "iqg-1e-g9c"; */
+"iqg-1e-g9c.title" = "當前套餐有效期至:";
+
+/* Class = "NSButtonCell"; title = "Buy"; ObjectID = "q8G-Bc-vt3"; */
+"q8G-Bc-vt3.title" = "購買";
+
+/* Class = "NSTextFieldCell"; title = "6 Month Package for 6$"; ObjectID = "xPd-Sm-eN5"; */
+"xPd-Sm-eN5.title" = "半年套餐68元";
+
+/* Class = "NSButtonCell"; title = "Logout"; ObjectID = "J8e-x8-rm5"; */
+"J8e-x8-rm5.title" = "退出登錄";

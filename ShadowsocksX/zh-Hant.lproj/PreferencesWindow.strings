@@ -1,0 +1,96 @@
+
+/* Class = "NSToolbarItem"; label = "KCP"; ObjectID = "0js-gQ-ZR5"; */
+"0js-gQ-ZR5.label" = "KCP";
+
+/* Class = "NSToolbarItem"; paletteLabel = "KCP"; ObjectID = "0js-gQ-ZR5"; */
+"0js-gQ-ZR5.paletteLabel" = "KCP";
+
+/* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Port:"; ObjectID = "0n6-Fb-85n"; */
+"0n6-Fb-85n.title" = "HTTP代理端口:";
+
+/* Class = "NSTextFieldCell"; title = "Connection Timeout:"; ObjectID = "1ee-pC-WBw"; */
+"1ee-pC-WBw.title" = "連接超時:";
+
+/* Class = "NSToolbarItem"; label = "Interfaces"; ObjectID = "3mX-lO-JBv"; */
+"3mX-lO-JBv.label" = "網絡";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Interfaces"; ObjectID = "3mX-lO-JBv"; */
+"3mX-lO-JBv.paletteLabel" = "網絡";
+
+/* Class = "NSTextFieldCell"; title = "Bypass proxy settings for hosts & Domains:"; ObjectID = "sRT-Xf-WXh"; */
+"sRT-Xf-WXh.title" = "忽略這些主機和域名的代理設置:";
+
+/* Class = "NSTabViewItem"; label = "Socks5"; ObjectID = "Anx-ka-RQB"; */
+"Anx-ka-RQB.label" = "Socks5";
+
+/* Class = "NSButtonCell"; title = "Enable HTTP Proxy"; ObjectID = "Ap1-iq-Ief"; */
+"Ap1-iq-Ief.title" = "啟用HTTP代理";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "BIU-65-Kfy"; */
+"BIU-65-Kfy.title" = "Check";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "偏好設置";
+
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "FNI-N0-qDY"; */
+"FNI-N0-qDY.title" = "開機啟動";
+
+/* Class = "NSButtonCell"; title = "Automatically Update GFW List"; ObjectID = "6L1-ry-zs7"; */
+"6L1-ry-zs7.title" = "自動更新GFW列表";
+
+/* Class = "NSButtonCell"; title = "Automatically download and install update "; ObjectID = "i0F-nD-Dhi"; */
+"i0F-nD-Dhi.title" = "自動更新安裝新版本軟件";
+
+/* Class = "NSTabViewItem"; label = "Interfaces"; ObjectID = "HJB-G4-GAJ"; */
+"HJB-G4-GAJ.label" = "網絡";
+
+/* Class = "NSTabViewItem"; label = "KCP"; ObjectID = "HSB-Au-HrU"; */
+"HSB-Au-HrU.label" = "KCP";
+
+/* Class = "NSButtonCell"; title = "Verbose Mode"; ObjectID = "Jgg-4J-tRQ"; */
+"Jgg-4J-tRQ.title" = "開啟詳細日誌模式";
+
+/* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Address:"; ObjectID = "Lrm-JK-1Xo"; */
+"Lrm-JK-1Xo.title" = "本地Socks5監聽地址:";
+
+/* Class = "NSTabViewItem"; label = "General"; ObjectID = "O4r-ap-knY"; */
+"O4r-ap-knY.label" = "通用";
+
+/* Class = "NSTextFieldCell"; title = "GFW List URL:"; ObjectID = "O8d-yA-xhw"; */
+"O8d-yA-xhw.title" = "GFW名單地址:";
+
+/* Class = "NSToolbarItem"; label = "HTTP"; ObjectID = "PKG-Wv-Rl8"; */
+"PKG-Wv-Rl8.label" = "HTTP";
+
+/* Class = "NSToolbarItem"; paletteLabel = "HTTP"; ObjectID = "PKG-Wv-Rl8"; */
+"PKG-Wv-Rl8.paletteLabel" = "HTTP";
+
+/* Class = "NSButtonCell"; title = "Auto Configure"; ObjectID = "Vap-2j-3By"; */
+"Vap-2j-3By.title" = "自動配置";
+
+/* Class = "NSButtonCell"; title = "Enable Interfaces Config"; ObjectID = "X0i-XQ-bmR"; */
+"X0i-XQ-bmR.title" = "Enable Interfaces Config";
+
+/* Class = "NSTabViewItem"; label = "HTTP"; ObjectID = "ZS4-QU-gvm"; */
+"ZS4-QU-gvm.label" = "HTTP";
+
+/* Class = "NSTextFieldCell"; title = "Block AD List URL:"; ObjectID = "eyv-5w-wqu"; */
+"eyv-5w-wqu.title" = "廣告黑名單地址:";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "sbV-3b-rKK"; */
+"sbV-3b-rKK.label" = "通用";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "sbV-3b-rKK"; */
+"sbV-3b-rKK.paletteLabel" = "通用";
+
+/* Class = "NSTextFieldCell"; title = "Local Socks5 Port:"; ObjectID = "tzm-rY-78v"; */
+"tzm-rY-78v.title" = "本地Socks5監聽端口:";
+
+/* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Address:"; ObjectID = "wAD-mQ-obm"; */
+"wAD-mQ-obm.title" = "HTTP代理監聽地址:";
+
+/* Class = "NSToolbarItem"; label = "Socks5"; ObjectID = "xYj-W4-cOb"; */
+"xYj-W4-cOb.label" = "Socks5";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Socks5"; ObjectID = "xYj-W4-cOb"; */
+"xYj-W4-cOb.paletteLabel" = "Socks5";

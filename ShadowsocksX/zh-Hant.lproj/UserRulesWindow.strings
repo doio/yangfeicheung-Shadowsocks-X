@@ -1,0 +1,9 @@
+
+/* Class = "NSWindow"; title = "User Custom Rules"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "自定義規則";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "i2G-1e-j42"; */
+"i2G-1e-j42.title" = "確定";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "jv7-l5-Apf"; */
+"jv7-l5-Apf.title" = "取消";

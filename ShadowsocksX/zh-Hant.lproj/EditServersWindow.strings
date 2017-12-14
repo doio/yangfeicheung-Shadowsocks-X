@@ -1,0 +1,51 @@
+
+/* Class = "NSButtonCell"; title = "Add"; ObjectID = "6YX-DA-hbQ"; */
+"6YX-DA-hbQ.title" = "添加";
+
+/* Class = "NSButtonCell"; title = "Copy"; ObjectID = "8ve-SY-XKy"; */
+"8ve-SY-XKy.title" = "購買";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "Dc8-vd-mB2"; */
+"Dc8-vd-mB2.title" = "保存";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Password"; ObjectID = "M7h-vJ-Qm6"; */
+"M7h-vJ-Qm6.placeholderString" = "密碼";
+
+/* Class = "NSWindow"; title = "Edit Servers"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "編輯服務器";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Sz3-BD-z1l"; */
+"Sz3-BD-z1l.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Remarks:"; ObjectID = "YeO-0j-Xz0"; */
+"YeO-0j-Xz0.title" = "備註:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "Yq8-UY-Bwj"; */
+"Yq8-UY-Bwj.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Address:"; ObjectID = "a24-Er-G3X"; */
+"a24-Er-G3X.title" = "服務器地址:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "c8e-xc-IQU"; */
+"c8e-xc-IQU.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Nickname e.g. US-Server-California"; ObjectID = "eBN-m5-yJo"; */
+"eBN-m5-yJo.placeholderString" = "Nickname e.g. US-Server-California";
+
+/* Class = "NSButtonCell"; title = "Delete"; ObjectID = "hol-Qw-R5b"; */
+"hol-Qw-R5b.title" = "刪除";
+
+/* Class = "NSTextFieldCell"; placeholderString = "IP"; ObjectID = "kO1-a7-mf2"; */
+"kO1-a7-mf2.placeholderString" = "IP";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Port"; ObjectID = "lhV-Zo-EKg"; */
+"lhV-Zo-EKg.placeholderString" = "服務器端口";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "mIE-8d-kKU"; */
+"mIE-8d-kKU.title" = "密碼:";
+
+/* Class = "NSTextFieldCell"; title = "Encryption:"; ObjectID = "uWZ-T0-2GQ"; */
+"uWZ-T0-2GQ.title" = "加密方式:";
+
+/* Class = "NSTextFieldCell"; title = "Port:"; ObjectID = "zWm-vz-7aW"; */
+"zWm-vz-7aW.title" = "服務器端口:";
