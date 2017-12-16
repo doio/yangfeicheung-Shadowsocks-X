@@ -1,6 +1,6 @@
 # Shadowsocks-X
 
-Current version is 2.4
+Current version is 2.5
 
 It's based on the old Shadowsocks software developed by clowindy,written in objc.
 
@@ -16,7 +16,7 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 
 ### Download
 
-From   [ssx-mac-v14.zip](http://www.sednax.com/data/ssx-mac-v14.zip)
+From   [ssx-mac-v15.zip](http://www.sednax.com/data/ssx-mac-v15.zip)
 
 Or     [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
   
@@ -45,7 +45,8 @@ There are total four modes in this app:
 - Users can customize their own rules.
 - Support for [AEAD Ciphers](https://shadowsocks.org/en/spec/AEAD-Ciphers.html)
 - Supports KCP [kcptun](https://github.com/xtaci/kcptun). 
-- Supports two more modes: Oversea Mode & Blacklist Mode
+- Supports two more modes: Oversea Mode & Blacklist Mode(which some also calls Whitelist Mode)
+- Import and export servers list from and to json file
 
 ## Difference from original Shadowsocks-X
 - Block AD function is added
