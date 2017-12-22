@@ -1,6 +1,6 @@
 # Shadowsocks-X
 
-Current version is 2.5
+Current version is 2.6
 
 It's based on the old Shadowsocks software developed by clowindy,written in objc.
 
@@ -16,7 +16,7 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 
 ### Download
 
-From   [ssx-mac-v15.zip](http://www.sednax.com/data/ssx-mac-v15.zip)
+From   [Shadowsocks X v2.6](http://www.sednax.com/data/ssx-mac-v16.zip)
 
 Or     [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
   
