@@ -16,7 +16,7 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 
 ### Download
 
-From   [Shadowsocks X v2.6](http://www.sednax.com/data/ssx-mac-v16.zip)
+From   [Shadowsocks X v2.8](http://www.sednax.com/data/ssx-mac-v18.zip)
 
 Or     [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
   
