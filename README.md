@@ -1,6 +1,6 @@
 # Shadowsocks-X
 
-Current version is 2.6
+Current version is 2.8
 
 It's based on the old Shadowsocks software developed by clowindy,written in objc.
 
@@ -34,6 +34,7 @@ There are total four modes in this app:
 
 ## Features
 
+- Supports High Availability Mode, app could automatically choose the best server for you.
 - Supports Socks5.
 - Supports Ping Servers Service.
 - Supports Http Proxy(polipo),it's integrated into this app,you don't have to install anything,no command line needed.
