@@ -2,10 +2,10 @@
    Localizable.strings
    ShadowsocksX
  
-   Created by Delphi Yuan on 10/12/17.
-   Copyright © 2017 AFEGames. All rights reserved.
+   Created by Yangfei Cheung on 10/12/17.
+   Copyright © 2017 Sednax. All rights reserved.
  */
-"Servers" = "服務器";
+"Servers" = "伺服器";
 "ShadowsocksX: On" = "ShadowsocksX: 打開";
 "ShadowsocksX: Off" = "ShadowsocksX: 關閉";
 "Turn ShadowsocksX On" = "打開ShadowsocksX";
@@ -13,7 +13,7 @@
 "Network Unavailable,Download Failed (@_@)" = "沒有網絡，更新失敗啦 (@_@)";
 "ShadowsocksX is ON" = "ShadowsocksX已經打開";
 "ShadowsocksX is OFF" = "ShadowsocksX已經關閉";
-"Paid or invalid servers cant be shared (@_@)" = "付費或者無效的服務器不能被共享 (@_@)";
+"Paid or invalid servers cant be shared (@_@)" = "付費或者無效的伺服器不能被共享 (@_@)";
 "Http Proxy command copied to clipboard" = "Http代理命令已經復製到剪貼板";
 "Failed to download latest GFW List (@_@)" = "更新GFW列表失敗 (@_@)";
 "PAC has been updated by latest GFW List." = "PAC has been updated by latest GFW List";
@@ -21,24 +21,35 @@
 "Update GFW List Succeeded (^_^)" = "更新GFW列表成功 (^_^)";
 "PAC has been updated" = "PAC has been updated";
 "Custom rules updated successfully (^_^)" = "用戶自定義規則添加成功啦 (^_^)";
-"Loading Servers List..." = "加載服務器列表中...";
+"Loading Servers List..." = "加載伺服器列表中...";
 "Invalid Serial Number" = "無效的序列號";
 "Error Happened!" = "發生錯誤啦!";
 "Shadowsocks X is already the latest (^_^)" = "Shadowsocks X 已經是最新版本啦 (^_^)";
 "Check update error,please try again (@_@)" = "軟件檢查更新失敗,請重新嘗試 (@_@)";
 "0 Hosts Imported (@_@)" = "未發現有效二維碼或者URL (@_@)";
-"1 Hosts Imported (@_@)" = "成功導入1個服務器 (@_@)";
-"2 Hosts Imported (@_@)" = "成功導入2個服務器 (@_@)";
-"3 Hosts Imported (@_@)" = "成功導入3個服務器 (@_@)";
-"4 Hosts Imported (@_@)" = "成功導入4個服務器 (@_@)";
-"5 Hosts Imported (@_@)" = "成功導入5個服務器 (@_@)";
-"6 Hosts Imported (@_@)" = "成功導入6個服務器 (@_@)";
-"7 Hosts Imported (@_@)" = "成功導入7個服務器 (@_@)";
-"8 Hosts Imported (@_@)" = "成功導入8個服務器 (@_@)";
-"9 Hosts Imported (@_@)" = "成功導入9個服務器 (@_@)";
+"1 Hosts Imported (@_@)" = "成功導入1個伺服器 (@_@)";
+"2 Hosts Imported (@_@)" = "成功導入2個伺服器 (@_@)";
+"3 Hosts Imported (@_@)" = "成功導入3個伺服器 (@_@)";
+"4 Hosts Imported (@_@)" = "成功導入4個伺服器 (@_@)";
+"5 Hosts Imported (@_@)" = "成功導入5個伺服器 (@_@)";
+"6 Hosts Imported (@_@)" = "成功導入6個伺服器 (@_@)";
+"7 Hosts Imported (@_@)" = "成功導入7個伺服器 (@_@)";
+"8 Hosts Imported (@_@)" = "成功導入8個伺服器 (@_@)";
+"9 Hosts Imported (@_@)" = "成功導入9個伺服器 (@_@)";
 "ss-netconfig does not exist (@_@)" = "ss-netconfig 不存在 (@_@)";
 "app-installer does not exist (@_@)" = "app-installer 不存在 (@_@)";
-"Server Expired,Please Buy Again (@_@)" = "服務器到期,請重新購買哦 (@_@)";
+"Server Expired,Please Buy Again (@_@)" = "伺服器到期,請重新購買哦 (@_@)";
 "Expired" = "已過期，請購買";
 "Login error, wrong email or password." = "錯誤的用戶名或者密碼.注意不是蘋果賬號，是在sednax網站註冊的賬號";
 "Login error,network not available,please check." = "網絡錯誤，請檢查網絡哦.";
+"Choose Json File" = "選擇Json文件";
+"Export Servers to Json File" = "導出服務器列表到Json文件";
+"Login" = "登錄";
+"Logout" = "退出登錄";
+"High Availability Mode" = "高可用性模式";
+"High Availability Mode will choose the fastest server for you automatically if you have two servers or more." = "高可用性模式會自動從多個服務器中幫助您選擇最快速的服務器進行連接";
+"OK" = "確定";
+"Payment Method Infomation" = "付款方式";
+"If you have trouble with paying us via Apple Store, you can reach us via wechat QR code on the right side." = "如果您在通過Apple Store付款時遇到問題，可以通過右側的微信二維碼聯繫我們。";
+"You must setup SOCKS Proxy manually in order to let Shadowsocks X work, do you know that?" = "從App Store下載的版本，必須要手動配置好SOCKS代理才能夠使用，如果您的Chrome瀏覽器有Unlock Youku插件，請先禁用插件，否則會產生衝突，導致Chrome不能連接，您是否已經知曉了呢";
+"SOCKS Proxys" = "SOCKS代理配置";

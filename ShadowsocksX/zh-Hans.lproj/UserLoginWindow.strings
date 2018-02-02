@@ -1,27 +1,28 @@
 
 /* Class = "NSWindow"; title = "Buy Servers"; ObjectID = "F0z-JX-Cv5"; */
-"F0z-JX-Cv5.title" = "Sednax 用戶登陸界面（在網站註冊的賬號）";
+"F0z-JX-Cv5.title" = "Sednax 用户登陆界面（在网站注册的账号）";
 
 /* Class = "NSTextFieldCell"; title = "Email:"; ObjectID = "JUT-Yf-Rhb"; */
-"JUT-Yf-Rhb.title" = "登錄郵箱:";
+"JUT-Yf-Rhb.title" = "登录邮箱:";
 
 /* Class = "NSTextFieldCell"; placeholderString = "Email"; ObjectID = "ZEp-4N-70N"; */
-"ZEp-4N-70N.placeholderString" = "郵箱";
+"ZEp-4N-70N.placeholderString" = "邮箱";
 
 /* Class = "NSSecureTextFieldCell"; placeholderString = "Password"; ObjectID = "boC-F5-cRD"; */
-"boC-F5-cRD.placeholderString" = "密碼";
+"boC-F5-cRD.placeholderString" = "密码";
 
 /* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "hCQ-bQ-ZKb"; */
-"hCQ-bQ-ZKb.title" = "登陸密碼:";
+"hCQ-bQ-ZKb.title" = "登陆密码:";
 
 /* Class = "NSButtonCell"; title = "Sign Up"; ObjectID = "hbS-11-tLJ"; */
-"hbS-11-tLJ.title" = "註冊";
+"hbS-11-tLJ.title" = "注册";
 
 /* Class = "NSButtonCell"; title = "Login"; ObjectID = "hqK-Wz-t8H"; */
-"hqK-Wz-t8H.title" = "登錄";
+"hqK-Wz-t8H.title" = "登录";
 
 /* Class = "NSButtonCell"; title = "Forgot Password?"; ObjectID = "oHP-ps-gXz"; */
-"oHP-ps-gXz.title" = "忘記密碼？";
+"oHP-ps-gXz.title" = "忘记密码？";
 
 /* Class = "NSButtonCell"; title = "Contact US"; ObjectID = "P6u-zp-4RH"; */
-"P6u-zp-4RH.title" = "聯繫我們";
+"P6u-zp-4RH.title" = "联系我们";
+

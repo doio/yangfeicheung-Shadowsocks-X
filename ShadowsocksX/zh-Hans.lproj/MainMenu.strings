@@ -1,65 +1,66 @@
+
 /* Class = "NSMenu"; title = "Servers"; ObjectID = "43F-da-Zns"; */
-"43F-da-Zns.title" = "伺服器";
+"43F-da-Zns.title" = "服务器";
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "6vT-cR-lHx"; */
 "6vT-cR-lHx.title" = "如何使用";
 
 /* Class = "NSMenuItem"; title = "Blacklist Mode"; ObjectID = "DSB-j7-ZM2"; */
-"DSB-j7-ZM2.title" = "黑名單模式";
+"DSB-j7-ZM2.title" = "黑名单模式";
 
 /* Class = "NSMenuItem"; title = "Servers"; ObjectID = "Dff-Iu-vVg"; */
-"Dff-Iu-vVg.title" = "伺服器";
+"Dff-Iu-vVg.title" = "服务器";
 
 /* Class = "NSMenuItem"; title = "Import &amp; Export Servers"; ObjectID = "gFF-pT-Lgu"; */
-"gFF-pT-Lgu.title" = "導出導入伺服器";
+"gFF-pT-Lgu.title" = "导出导入服务器";
 
 /* Class = "NSMenuItem"; title = "Import Servers from Json File"; ObjectID = "k7V-yM-qV8"; */
-"k7V-yM-qV8.title" = "從Json文件導入伺服器列表";
+"k7V-yM-qV8.title" = "从Json文件导入服务器列表";
 
 /* Class = "NSMenuItem"; title = "Export All Servers to Json File"; ObjectID = "Mid-cI-ndR"; */
-"Mid-cI-ndR.title" = "導出伺服器列表到Json文件";
+"Mid-cI-ndR.title" = "导出服务器列表到Json文件";
 
 /* Class = "NSMenuItem"; title = "Copy HTTP Proxy Shell Command"; ObjectID = "JAk-xJ-vAg"; */
-"JAk-xJ-vAg.title" = "複製HTTP代理命令";
+"JAk-xJ-vAg.title" = "复制HTTP代理命令";
 
 /* Class = "NSMenuItem"; title = "Feedback"; ObjectID = "Kz4-IM-A7v"; */
-"Kz4-IM-A7v.title" = "用戶反饋";
+"Kz4-IM-A7v.title" = "用户反馈";
 
 /* Class = "NSMenuItem"; title = "Auto Mode"; ObjectID = "Q0m-nH-QKf"; */
-"Q0m-nH-QKf.title" = "自動模式";
+"Q0m-nH-QKf.title" = "自动模式";
 
 /* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "SYs-Yh-35N"; */
-"SYs-Yh-35N.title" = "偏好設置...";
+"SYs-Yh-35N.title" = "偏好设置...";
 
 /* Class = "NSMenuItem"; title = "Check For Updates..."; ObjectID = "Ywi-Q3-Fbz"; */
-"Ywi-Q3-Fbz.title" = "檢查更新...";
+"Ywi-Q3-Fbz.title" = "检查更新...";
 
 /* Class = "NSMenuItem"; title = "Status: On"; ObjectID = "bP2-lX-GwS"; */
-"bP2-lX-GwS.title" = "狀態: 打開";
+"bP2-lX-GwS.title" = "状态: 打开";
 
 /* Class = "NSMenuItem"; title = "Block AD"; ObjectID = "cm6-7c-96b"; */
-"cm6-7c-96b.title" = "屏蔽垃圾廣告";
+"cm6-7c-96b.title" = "屏蔽垃圾广告";
 
 /* Class = "NSMenuItem"; title = "Enable HTTP Proxy"; ObjectID = "wnm-Ve-T8Z"; */
-"wnm-Ve-T8Z.title" = "啟用HTTP代理";
+"wnm-Ve-T8Z.title" = "启用HTTP代理";
 
 /* Class = "NSMenuItem"; title = "Oversea Mode"; ObjectID = "epn-jd-xYE"; */
-"epn-jd-xYE.title" = "留學生模式";
+"epn-jd-xYE.title" = "留学生模式";
 
 /* Class = "NSMenuItem"; title = "User Login"; ObjectID = "6oL-uM-cSf"; */
-"6oL-uM-cSf.title" = "用戶登錄";
+"6oL-uM-cSf.title" = "用户登录";
 
-/* Class = "NSMenuItem"; title = "User Login"; ObjectID = "cuf-Qv-iIC"; */
-"cuf-Qv-iIC.title" = "幫助";
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "cuf-Qv-iIC"; */
+"cuf-Qv-iIC.title" = "帮助";
 
 /* Class = "NSMenuItem"; title = "About US"; ObjectID = "hag-gp-09g"; */
-"hag-gp-09g.title" = "關於我們";
+"hag-gp-09g.title" = "关于我们";
 
 /* Class = "NSMenuItem"; title = "Contact US"; ObjectID = "ycc-wv-Mbl"; */
-"ycc-wv-Mbl.title" = "聯繫我們";
+"ycc-wv-Mbl.title" = "联系我们";
 
 /* Class = "NSMenuItem"; title = "Show Statistics"; ObjectID = "amB-Nv-aCN"; */
-"amB-Nv-aCN.title" = "總流量統計";
+"amB-Nv-aCN.title" = "总流量统计";
 
 /* Class = "NSMenuItem"; title = "Show Logs"; ObjectID = "vWJ-fM-qTQ"; */
 "vWJ-fM-qTQ.title" = "查看Log";
@@ -68,25 +69,25 @@
 "kZR-lI-h5W.title" = "退出ShadowsocksX";
 
 /* Class = "NSMenuItem"; title = "Edit Servers..."; ObjectID = "kbY-sf-D7f"; */
-"kbY-sf-D7f.title" = "編輯伺服器...";
+"kbY-sf-D7f.title" = "编辑服务器...";
 
 /* Class = "NSMenuItem"; title = "Scan Screen QR Code"; ObjectID = "tht-oH-VKh"; */
-"tht-oH-VKh.title" = "掃描屏幕二維碼";
+"tht-oH-VKh.title" = "扫描屏幕二维码";
 
 /* Class = "NSMenuItem"; title = "Active Server QR Code"; ObjectID = "4em-5y-mHn"; */
-"4em-5y-mHn.title" = "生成當前伺服器二維碼";
+"4em-5y-mHn.title" = "生成当前服务器二维码";
 
 /* Class = "NSMenuItem"; title = "Import URL From Clipboard"; ObjectID = "3pI-Le-XsZ"; */
-"3pI-Le-XsZ.title" = "從粘貼板URL導入伺服器";
+"3pI-Le-XsZ.title" = "从粘贴板URL导入服务器";
 
 /* Class = "NSMenuItem"; title = "Buy Servers"; ObjectID = "p5D-sE-HAA"; */
-"p5D-sE-HAA.title" = "購買伺服器";
+"p5D-sE-HAA.title" = "购买服务器";
 
 /* Class = "NSMenuItem"; title = "Buy Servers"; ObjectID = "eCe-ur-o04"; */
-"eCe-ur-o04.title" = "購買伺服器";
+"eCe-ur-o04.title" = "购买服务器";
 
 /* Class = "NSMenuItem"; title = "Ping Servers"; ObjectID = "lAD-OA-Gev"; */
-"lAD-OA-Gev.title" = "伺服器測速";
+"lAD-OA-Gev.title" = "服务器测速";
 
 /* Class = "NSMenuItem"; title = "Load Balance"; ObjectID = "bmA-xa-Vy2"; */
 "bmA-xa-Vy2.title" = "高可用性";
@@ -95,13 +96,14 @@
 "pGH-eL-tRF.title" = "全局模式";
 
 /* Class = "NSMenuItem"; title = "Enable ShadowsocksX"; ObjectID = "qWf-bb-3Bg"; */
-"qWf-bb-3Bg.title" = "打開ShadowsocksX";
+"qWf-bb-3Bg.title" = "打开ShadowsocksX";
 
 /* Class = "NSMenuItem"; title = "Update GFW List"; ObjectID = "sht-RU-uQT"; */
 "sht-RU-uQT.title" = "更新GFW列表";
 
 /* Class = "NSMenuItem"; title = "Custom Rules"; ObjectID = "zoN-2A-D9g"; */
-"zoN-2A-D9g.title" = "用戶自定義規則";
+"zoN-2A-D9g.title" = "用户自定义规则";
 
 /* Class = "NSMenuItem"; title = "Launch At Login"; ObjectID = "dzM-3j-dN5"; */
-"dzM-3j-dN5.title" = "開機啟動";
+"dzM-3j-dN5.title" = "开机启动";
+

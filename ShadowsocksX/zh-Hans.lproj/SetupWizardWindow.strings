@@ -1,0 +1,12 @@
+
+/* Class = "NSWindow"; title = "Help"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "帮助";
+
+/* Class = "NSButtonCell"; title = "I'm a Guru"; ObjectID = "Qqu-1g-hXc"; */
+"Qqu-1g-hXc.title" = "不用了,我很屌";
+
+/* Class = "NSTextFieldCell"; title = "This is the first time you open this software,would you like to view help info?"; ObjectID = "yET-An-K7e"; */
+"yET-An-K7e.title" = "这是第一次打开软件，是否需要查看帮助信息简单了解下?";
+
+/* Class = "NSButtonCell"; title = "View Help"; ObjectID = "zfz-NP-YC6"; */
+"zfz-NP-YC6.title" = "查看更多帮助";

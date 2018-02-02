@@ -1,14 +1,15 @@
+
 /* Class = "NSTextFieldCell"; title = "Data Received:"; ObjectID = "2oq-Eg-9hX"; */
-"2oq-Eg-9hX.title" = "從伺服器接收數據:";
+"2oq-Eg-9hX.title" = "从服务器接收数据:";
 
 /* Class = "NSTextFieldCell"; title = "Data Sent:"; ObjectID = "BRf-ar-jGq"; */
-"BRf-ar-jGq.title" = "發送到伺服器數據:";
+"BRf-ar-jGq.title" = "发送到服务器数据:";
 
 /* Class = "NSWindow"; title = "Statistics"; ObjectID = "F0z-JX-Cv5"; */
-"F0z-JX-Cv5.title" = "流量統計";
+"F0z-JX-Cv5.title" = "流量统计";
 
 /* Class = "NSTextFieldCell"; title = "Junk Ads Blocked:"; ObjectID = "Gsf-Uy-uf7"; */
-"Gsf-Uy-uf7.title" = "共阻擋垃圾廣告次數:";
+"Gsf-Uy-uf7.title" = "共阻挡垃圾广告次数:";
 
 /* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "KEy-k4-Sob"; */
 "KEy-k4-Sob.title" = "Label";
@@ -26,7 +27,7 @@
 "hl0-dj-mJA.title" = "Label";
 
 /* Class = "NSTextFieldCell"; title = "Data Received Directly:"; ObjectID = "yEw-Ex-GRh"; */
-"yEw-Ex-GRh.title" = "直接接收數據:";
+"yEw-Ex-GRh.title" = "直接接收数据:";
 
 /* Class = "NSTextFieldCell"; title = "Data Sent Directly:"; ObjectID = "yRq-l9-0ab"; */
-"yRq-l9-0ab.title" = "直接發送數據:";
+"yRq-l9-0ab.title" = "直接发送数据:";

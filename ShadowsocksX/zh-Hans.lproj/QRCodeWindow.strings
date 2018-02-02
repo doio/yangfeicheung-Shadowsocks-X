@@ -1,0 +1,9 @@
+
+/* Class = "NSWindow"; title = "QR Code"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "二维码";
+
+/* Class = "NSTextFieldCell"; title = "Title For Server"; ObjectID = "PMb-eq-eol"; */
+"PMb-eq-eol.title" = "Title For Server";
+
+/* Class = "NSButtonCell"; title = "Copy To Pasteboard"; ObjectID = "r2Y-Rs-Mhm"; */
+"r2Y-Rs-Mhm.title" = "复制二维码图片到剪贴板";

@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  ShadowsocksX
+
+  Created by Yangfei Cheung on 10/12/17.
+  Copyright © 2017 Sednax. All rights reserved.
+*/
+"Servers" = "服务器";
+"ShadowsocksX: On" = "ShadowsocksX: 打开";
+"ShadowsocksX: Off" = "ShadowsocksX: 关闭";
+"Turn ShadowsocksX On" = "打开ShadowsocksX";
+"Turn ShadowsocksX Off" = "关闭ShadowsocksX";
+"Network Unavailable,Download Failed (@_@)" = "没有网络，更新失败啦 (@_@)";
+"ShadowsocksX is ON" = "ShadowsocksX已经打开";
+"ShadowsocksX is OFF" = "ShadowsocksX已经关闭";
+"Paid or invalid servers cant be shared (@_@)" = "付费或者无效的服务器不能被共享 (@_@)";
+"Http Proxy command copied to clipboard" = "Http代理命令已经复制到剪贴板";
+"Failed to download latest GFW List (@_@)" = "更新GFW列表失败 (@_@)";
+"PAC has been updated by latest GFW List." = "PAC has been updated by latest GFW List";
+"Update GFW List Failed (@_@)" = "下载GFW列表失败 (@_@)";
+"Update GFW List Succeeded (^_^)" = "更新GFW列表成功 (^_^)";
+"PAC has been updated" = "PAC has been updated";
+"Custom rules updated successfully (^_^)" = "用户自定义规则添加成功啦 (^_^)";
+"Loading Servers List..." = "加载服务器列表中...";
+"Invalid Serial Number" = "无效的序列号";
+"Error Happened!" = "发生错误啦!";
+"Shadowsocks X is already the latest (^_^)" = "Shadowsocks X 已经是最新版本啦 (^_^)";
+"Check update error,please try again (@_@)" = "软件检查更新失败,请重新尝试 (@_@)";
+"0 Hosts Imported (@_@)" = "未发现有效二维码或者URL (@_@)";
+"1 Hosts Imported (@_@)" = "成功导入1个服务器 (@_@)";
+"2 Hosts Imported (@_@)" = "成功导入2个服务器 (@_@)";
+"3 Hosts Imported (@_@)" = "成功导入3个服务器 (@_@)";
+"4 Hosts Imported (@_@)" = "成功导入4个服务器 (@_@)";
+"5 Hosts Imported (@_@)" = "成功导入5个服务器 (@_@)";
+"6 Hosts Imported (@_@)" = "成功导入6个服务器 (@_@)";
+"7 Hosts Imported (@_@)" = "成功导入7个服务器 (@_@)";
+"8 Hosts Imported (@_@)" = "成功导入8个服务器 (@_@)";
+"9 Hosts Imported (@_@)" = "成功导入9个服务器 (@_@)";
+"ss-netconfig does not exist (@_@)" = "ss-netconfig 不存在 (@_@)";
+"app-installer does not exist (@_@)" = "app-installer 不存在 (@_@)";
+"Server Expired,Please Buy Again (@_@)" = "服务器到期,请重新购买哦 (@_@)";
+"Expired" = "已过期，请购买";
+"Login error, wrong email or password." = "错误的用户名或者密码.注意不是苹果账号，是在sednax网站注册的账号";
+"Login error,network not available,please check." = "网络错误，请检查网络哦.";
+"Choose Json File" = "选择Json文件";
+"Export Servers to Json File" = "导出服务器列表到Json文件";
+"Login" = "登录";
+"Logout" = "退出登录";
+"High Availability Mode" = "高可用性模式";
+"High Availability Mode will choose the fastest server for you automatically if you have two servers or more." = "高可用性模式会自动从多个服务器中帮助您选择最快速的服务器进行连接";
+"OK" = "确定";
+"Payment Method Infomation" = "付款方式";
+"If you have trouble with paying us via Apple Store, you can reach us via wechat QR code on the right side." = "如果您在通过Apple Store付款时遇到问题，可以通过右侧的微信二维码联系我们。";
+"You must setup SOCKS Proxy manually in order to let Shadowsocks X work, do you know that?" = "从App Store下载的版本，必须要手动配置好SOCKS代理才能够使用，如果您的Chrome浏览器有Unlock Youku插件，请先禁用插件，否则会产生冲突，导致Chrome不能连接，您是否已经知晓了呢？";
+"SOCKS Proxys" = "SOCKS代理配置";
