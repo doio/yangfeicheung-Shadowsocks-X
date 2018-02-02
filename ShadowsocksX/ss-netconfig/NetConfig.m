@@ -2,8 +2,8 @@
 //  NetConfig.m
 //  ShadowsocksX
 //
-//  Created by Delphi Yuan on 9/19/17.
-//  Copyright © 2017 AFEGames. All rights reserved.
+//  Created by Yangfei Cheung on 9/19/17.
+//  Copyright © 2017 Sednax. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -141,9 +141,11 @@ int main(int argc, const char * argv[])
     NSString* pacURL;
     NSString* portString;
     NSString* privoxyPortString;
+    NSString* bypass; //bypass list of hosts & domains for proxy
+    NSMutableArray* bypassArray = [[NSMutableArray alloc] init];
     
     BRLOptionParser *options = [BRLOptionParser new];
-    [options setBanner:@"Usage: %s [-v] [-m auto|global|off] [-u <url>] [-p <port>] [-r <port>]", argv[0]];
+    [options setBanner:@"Usage: %s [-v] [-m auto|global|off] [-u <url>] [-p <port>] [-r <port>] [-b <bypass>]", argv[0]];
 
     // Version
     [options addOption:"version" flag:'v' description:@"Print the version number." block:^{
@@ -168,6 +170,7 @@ int main(int argc, const char * argv[])
     [options addOption:"network-service" flag:'n' description:@"Manually specify the network name to set proxy." blockWithArgument:^(NSString* value){
         [networkServiceKeys addObject:value];
     }];
+    [options addOption:"bypass" flag:'b' description:@"bypass list of domains & host of proxy,normally should be: 127.0.0.1, 192.168.0.0/16, 172.16.0.0/12, 10.0.0.0/8, localhost " argument:&bypass];
     
     NSError *error = nil;
     if (![options parseArgc:argc argv:argv error:&error]) {
@@ -221,6 +224,20 @@ int main(int argc, const char * argv[])
         {
             return 1;
         }
+    }
+    
+    //bypass
+    if(bypass == nil)
+    {
+        [bypassArray addObject:@"127.0.0.1"];
+        [bypassArray addObject:@"192.168.0.0/16"];
+        [bypassArray addObject:@"172.16.0.0/12"];
+        [bypassArray addObject:@"10.0.0.0/8"];
+        [bypassArray addObject:@"localhost"];
+    }
+    else
+    {
+        bypassArray = [[bypass componentsSeparatedByString:@","] mutableCopy];
     }
     
     static AuthorizationRef authRef;
@@ -289,7 +306,7 @@ int main(int argc, const char * argv[])
                     [proxies setObject:@"127.0.0.1" forKey:(NSString *)kCFNetworkProxiesSOCKSProxy];
                     [proxies setObject:[NSNumber numberWithInteger:port] forKey:(NSString*)kCFNetworkProxiesSOCKSPort];
                     [proxies setObject:[NSNumber numberWithInt:1] forKey:(NSString*)kCFNetworkProxiesSOCKSEnable];
-                    [proxies setObject:@[@"127.0.0.1", @"192.168.0.0/16",@"172.16.0.0/12", @"10.0.0.0/8", @"localhost"] forKey:(NSString*)kCFNetworkProxiesExceptionsList];
+                    [proxies setObject:bypassArray forKey:(NSString*)kCFNetworkProxiesExceptionsList];
                     
                     if (privoxyPort != 0)
                     {
