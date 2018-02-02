@@ -56,7 +56,7 @@ static NSString * shortErrorFromError(NSError * error) {
     int             failure;
     const char *    failureStr;
     
-    assert(error != nil);
+    //assert(error != nil);
     
     result = nil;
     
@@ -83,7 +83,7 @@ static NSString * shortErrorFromError(NSError * error) {
     if (result == nil) {
         result = error.localizedDescription;
     }
-    assert(result != nil);
+    //assert(result != nil);
     return result;
 }
 
@@ -126,10 +126,10 @@ static NSString * shortErrorFromError(NSError * error) {
  */
 
 - (void)runWithHostName:(NSString *)hostName {
-    assert(self.pinger == nil);
+    //assert(self.pinger == nil);
     
     self.pinger = [[SimplePing alloc] initWithHostName:hostName];
-    assert(self.pinger != nil);
+    //assert(self.pinger != nil);
     
     // By default we use the first IP address we get back from host resolution (.Any) 
     // but these flags let the user override that.
@@ -155,17 +155,27 @@ static NSString * shortErrorFromError(NSError * error) {
  */
 
 - (void)sendPing {
-    assert(self.pinger != nil);
-    [self.pinger sendPingWithData:nil];
-    _maxFailedPingAllowed--;
-    if(_maxFailedPingAllowed < 0)
+    @try
+    {
+        //assert(self.pinger != nil);
+        [self.pinger sendPingWithData:nil];
+        _maxFailedPingAllowed--;
+        if(_maxFailedPingAllowed < 0)
+            [self pingNextServer];
+    }
+    @catch(NSException *e)
+    {
+        NSLog(@"ERROR: sendPing exception: %@", e.description);
+        _maxFailedPingAllowed--;
+        if(_maxFailedPingAllowed < 0)
         [self pingNextServer];
+    }
 }
 
 - (void)simplePing:(SimplePing *)pinger didStartWithAddress:(NSData *)address {
     #pragma unused(pinger)
-    assert(pinger == self.pinger);
-    assert(address != nil);
+    //assert(pinger == self.pinger);
+    //assert(address != nil);
 
     NSLog(@"pinging %@", displayAddressForAddress(address));
 
@@ -175,13 +185,13 @@ static NSString * shortErrorFromError(NSError * error) {
 
     // And start a timer to send the subsequent pings.
     
-    assert(self.sendTimer == nil);
+    //assert(self.sendTimer == nil);
     self.sendTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendPing) userInfo:nil repeats:YES];
 }
 
 - (void)simplePing:(SimplePing *)pinger didFailWithError:(NSError *)error {
     #pragma unused(pinger)
-    assert(pinger == self.pinger);
+    //assert(pinger == self.pinger);
     NSLog(@"failed: %@", shortErrorFromError(error));
 
     [self.sendTimer invalidate];
@@ -199,7 +209,7 @@ static NSString * shortErrorFromError(NSError * error) {
 
 - (void)simplePing:(SimplePing *)pinger didFailToSendPacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber error:(NSError *)error {
     #pragma unused(pinger)
-    assert(pinger == self.pinger);
+    //assert(pinger == self.pinger);
     #pragma unused(packet)
     NSLog(@"#%u send failed: %@", (unsigned int) sequenceNumber, shortErrorFromError(error));
     
@@ -210,7 +220,7 @@ static NSString * shortErrorFromError(NSError * error) {
 
 - (void)simplePing:(SimplePing *)pinger didSendPacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber {
 #pragma unused(pinger)
-    assert(pinger == self.pinger);
+    //assert(pinger == self.pinger);
 #pragma unused(packet)
     //NSLog(@"#%u sent", (unsigned int) sequenceNumber);
     self.startTime = [NSDate date];
@@ -218,11 +228,11 @@ static NSString * shortErrorFromError(NSError * error) {
 
 - (void)simplePing:(SimplePing *)pinger didReceivePingResponsePacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber {
     #pragma unused(pinger)
-    assert(pinger == self.pinger);
+    //assert(pinger == self.pinger);
     #pragma unused(packet)
     //NSLog(@"#%u received, size=%zu", (unsigned int) sequenceNumber, (size_t) packet.length);
     
-    //added by delphiyuan
+    //added by yangfei.cheung
     NSDate *end=[NSDate date];
     double latency = [end timeIntervalSinceDate:self.startTime]*1000.0;
     //self.pingTotalTime += latency;
@@ -249,6 +259,12 @@ static NSString * shortErrorFromError(NSError * error) {
         NSArray* serverList = [[DataHelper shareInstance] getServerList];
         ServerInfo* s = [serverList objectAtIndex:serverList.count - self.currentPingIndex];
         [PingHelper pingHostname:s.host];
+    }
+    else
+    {//ping ended
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:NOTI_PING_FINISHED object:nil userInfo:nil];
+        });
     }
 }
 

@@ -2,8 +2,8 @@
 //  PingHelper.h
 //  ShadowsocksX
 //
-//  Created by Delphi Yuan on 11/24/17.
-//  Copyright © 2017 AFEGames. All rights reserved.
+//  Created by Yangfei Cheung on 11/24/17.
+//  Copyright © 2017 Sednax. All rights reserved.
 //
 
 #ifndef PingHelper_h

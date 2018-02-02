@@ -139,8 +139,8 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
 - (void)dealloc {
     [self stop];
     // Double check that -stop took care of _host and _socket.
-    assert(self->_host == NULL);
-    assert(self->_socket == NULL);
+    //assert(self->_host == NULL);
+    //assert(self->_socket == NULL);
 }
 
 - (sa_family_t)hostAddressFamily {
@@ -160,7 +160,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
 - (void)didFailWithError:(NSError *)error {
     id<SimplePingDelegate>  strongDelegate;
     
-    assert(error != nil);
+    //assert(error != nil);
     
     // We retain ourselves temporarily because it's common for the delegate method 
     // to release its last reference to us, which causes -dealloc to be called here. 
@@ -209,7 +209,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
     ICMPHeader *            icmpPtr;
 
     packet = [NSMutableData dataWithLength:sizeof(*icmpPtr) + payload.length];
-    assert(packet != nil);
+    //assert(packet != nil);
 
     icmpPtr = packet.mutableBytes;
     icmpPtr->type = type;
@@ -244,12 +244,12 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
     payload = data;
     if (payload == nil) {
         payload = [[NSString stringWithFormat:@"%28zd bottles of beer on the wall", (ssize_t) 99 - (size_t) (self.nextSequenceNumber % 100) ] dataUsingEncoding:NSASCIIStringEncoding];
-        assert(payload != nil);
+        //assert(payload != nil);
         
         // Our dummy payload is sized so that the resulting ICMP packet, including the ICMPHeader, is 
         // 64-bytes, which makes it easier to recognise our packets on the wire.
         
-        assert([payload length] == 56);
+        //assert([payload length] == 56);
     }
     
     switch (self.hostAddressFamily) {
@@ -260,10 +260,10 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
             packet = [self pingPacketWithType:ICMPv6TypeEchoRequest payload:payload requiresChecksum:NO];
         } break;
         default: {
-            assert(NO);
+            //assert(NO);
         } break;
     }
-    assert(packet != nil);
+    //assert(packet != nil);
 
     // Send the packet.
     
@@ -471,7 +471,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
             result = [self validatePing6ResponsePacket:packet sequenceNumber:sequenceNumberPtr];
         } break;
         default: {
-            assert(NO);
+            //assert(NO);
             result = NO;
         } break;
     }
@@ -495,7 +495,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
     // here (plus it's what <x-man-page://8/ping> uses).
     
     buffer = malloc(kBufferSize);
-    assert(buffer != NULL);
+    //assert(buffer != NULL);
     
     // Actually read the data.  We use recvfrom(), and thus get back the source address, 
     // but we don't actually do anything with it.  It would be trivial to pass it to 
@@ -516,7 +516,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
         uint16_t                sequenceNumber;
 
         packet = [NSMutableData dataWithBytes:buffer length:(NSUInteger) bytesRead];
-        assert(packet != nil);
+        //assert(packet != nil);
 
         // We got some data, pass it up to our client.
 
@@ -562,16 +562,16 @@ static void SocketReadCallback(CFSocketRef s, CFSocketCallBackType type, CFDataR
     SimplePing *    obj;
     
     obj = (__bridge SimplePing *) info;
-    assert([obj isKindOfClass:[SimplePing class]]);
+    //assert([obj isKindOfClass:[SimplePing class]]);
     
     #pragma unused(s)
-    assert(s == obj.socket);
+    //assert(s == obj.socket);
     #pragma unused(type)
-    assert(type == kCFSocketReadCallBack);
+    //assert(type == kCFSocketReadCallBack);
     #pragma unused(address)
-    assert(address == nil);
+    //assert(address == nil);
     #pragma unused(data)
-    assert(data == nil);
+    //assert(data == nil);
     
     [obj readData];
 }
@@ -586,7 +586,7 @@ static void SocketReadCallback(CFSocketRef s, CFSocketCallBackType type, CFDataR
     int                     err;
     int                     fd;
 
-    assert(self.hostAddress != nil);
+    //assert(self.hostAddress != nil);
 
     // Open the socket.
     
@@ -620,15 +620,15 @@ static void SocketReadCallback(CFSocketRef s, CFSocketCallBackType type, CFDataR
         // Wrap it in a CFSocket and schedule it on the runloop.
         
         self.socket = (CFSocketRef) CFAutorelease( CFSocketCreateWithNative(NULL, fd, kCFSocketReadCallBack, SocketReadCallback, &context) );
-        assert(self.socket != NULL);
+        //assert(self.socket != NULL);
         
         // The socket will now take care of cleaning up our file descriptor.
         
-        assert( CFSocketGetSocketFlags(self.socket) & kCFSocketCloseOnInvalidate );
+        //assert( CFSocketGetSocketFlags(self.socket) & kCFSocketCloseOnInvalidate );
         fd = -1;
         
         rls = CFSocketCreateRunLoopSource(NULL, self.socket, 0);
-        assert(rls != NULL);
+        //assert(rls != NULL);
         
         CFRunLoopAddSource(CFRunLoopGetCurrent(), rls, kCFRunLoopDefaultMode);
         
@@ -639,7 +639,7 @@ static void SocketReadCallback(CFSocketRef s, CFSocketCallBackType type, CFDataR
             [strongDelegate simplePing:self didStartWithAddress:self.hostAddress];
         }
     }
-    assert(fd == -1);
+    //assert(fd == -1);
 }
 
 /*! Processes the results of our name-to-address resolution.
@@ -712,12 +712,12 @@ static void HostResolveCallback(CFHostRef theHost, CFHostInfoType typeInfo, cons
     SimplePing *    obj;
 
     obj = (__bridge SimplePing *) info;
-    assert([obj isKindOfClass:[SimplePing class]]);
+    //assert([obj isKindOfClass:[SimplePing class]]);
     
     #pragma unused(theHost)
-    assert(theHost == obj.host);
+    //assert(theHost == obj.host);
     #pragma unused(typeInfo)
-    assert(typeInfo == kCFHostAddresses);
+    //assert(typeInfo == kCFHostAddresses);
     
     if ( (error != NULL) && (error->domain != 0) ) {
         [obj didFailWithHostStreamError:*error];
@@ -731,11 +731,11 @@ static void HostResolveCallback(CFHostRef theHost, CFHostInfoType typeInfo, cons
     CFHostClientContext context = {0, (__bridge void *)(self), NULL, NULL, NULL};
     CFStreamError       streamError;
     
-    assert(self.host == NULL);
-    assert(self.hostAddress == nil);
+    //assert(self.host == NULL);
+    //assert(self.hostAddress == nil);
 
     self.host = (CFHostRef) CFAutorelease( CFHostCreateWithName(NULL, (__bridge CFStringRef) self.hostName) );
-    assert(self.host != NULL);
+    //assert(self.host != NULL);
     
     CFHostSetClient(self.host, HostResolveCallback, &context);
     
