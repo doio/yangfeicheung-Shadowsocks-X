@@ -2,8 +2,8 @@
 //  ExtendNSString.h
 //  ShadowsocksX
 //
-//  Created by Delphi Yuan on 10/13/17.
-//  Copyright © 2017 AFEGames. All rights reserved.
+//  Created by Yangfei Cheung on 10/13/17.
+//  Copyright © 2017 Sednax. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,5 +12,8 @@
 
 - (int) indexOf:(NSString *)text;
 - (bool) containsString: (NSString*) substring;
-
+- (NSString*) simpleEncrypt;
+- (NSString*) simpleDecrypt;
+- (NSString*) encryptWithBase64;
+- (NSString*) decryptFromBase64;
 @end
