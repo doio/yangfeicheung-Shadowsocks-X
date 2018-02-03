@@ -35,7 +35,7 @@ There are total four modes in this app:
 ## Features
 
 - Supports High Availability Mode, app could automatically choose the best server for you.
-- Supports Socks5.
+- Supports two more modes: Oversea Mode & Blacklist Mode(which some also calls Whitelist Mode)
 - Supports Ping Servers Service.
 - Supports Http Proxy(polipo),it's integrated into this app,you don't have to install anything,no command line needed.
 - Block AD function lets you block those annoying ads when surfing online.
@@ -46,7 +46,6 @@ There are total four modes in this app:
 - Users can customize their own rules.
 - Support for [AEAD Ciphers](https://shadowsocks.org/en/spec/AEAD-Ciphers.html)
 - Supports KCP [kcptun](https://github.com/xtaci/kcptun). 
-- Supports two more modes: Oversea Mode & Blacklist Mode(which some also calls Whitelist Mode)
 - Import and export servers list from and to json file
 
 ## Difference from original Shadowsocks-X
