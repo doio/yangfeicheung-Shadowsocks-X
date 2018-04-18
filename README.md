@@ -16,10 +16,15 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 
 ### Download
 
-From   [Shadowsocks X v2.14](http://www.sednax.com/data/ssx-mac-v24.zip)
+Mac Version:
 
-Or     [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
-  
+Download From  Website: [Shadowsocks X v2.14](http://www.sednax.com/data/ssx-mac-v24.zip)
+Download From Github:   [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
+
+Windows Version:
+Download From Website:  [Shadowsocks for Windows v4.09](http://www.sednax.com/data/ssx-win-v409.zip)
+
+
 ### How to use
 1. Download the zip file and unzip,put the ShadowsocksX.app under Applications folder.
 2. Choose one server,if there's none,add one or buy one.
