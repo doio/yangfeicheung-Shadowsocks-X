@@ -19,6 +19,7 @@ It's based on the old Shadowsocks software developed by clowindy,written in objc
 Mac Version:
 
 Download From  Website: [Shadowsocks X v2.14](http://www.sednax.com/data/ssx-mac-v24.zip)
+
 Download From Github:   [https://github.com/yangfeicheung/Shadowsocks-X/releases/](https://github.com/yangfeicheung/Shadowsocks-X/releases/)
 
 Windows Version:
